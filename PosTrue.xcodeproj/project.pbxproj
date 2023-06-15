@@ -16,6 +16,12 @@
 		7A093D832A1D5C2900955EFF /* PosTrueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A093D822A1D5C2900955EFF /* PosTrueTests.swift */; };
 		7A093D8D2A1D5C2900955EFF /* PosTrueUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A093D8C2A1D5C2900955EFF /* PosTrueUITests.swift */; };
 		7A093D8F2A1D5C2900955EFF /* PosTrueUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A093D8E2A1D5C2900955EFF /* PosTrueUITestsLaunchTests.swift */; };
+		7A093DA22A1D820100955EFF /* PopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A093DA12A1D820100955EFF /* PopupViewController.swift */; };
+		7A093DA42A209A9F00955EFF /* SessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A093DA32A209A9F00955EFF /* SessionViewController.swift */; };
+		7A093DA62A25A66700955EFF /* AnalyticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A093DA52A25A66700955EFF /* AnalyticsViewController.swift */; };
+		7A093DAD2A2686EA00955EFF /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 7A093DAC2A2686EA00955EFF /* SwiftUICharts */; };
+		7A7113EA2A2D9A65000769D3 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 7A7113E92A2D9A65000769D3 /* SnapKit */; };
+		7A8EC30F2A2A96E8008FB10A /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8EC30E2A2A96E8008FB10A /* ChartView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,10 @@
 		7A093D882A1D5C2900955EFF /* PosTrueUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PosTrueUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A093D8C2A1D5C2900955EFF /* PosTrueUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosTrueUITests.swift; sourceTree = "<group>"; };
 		7A093D8E2A1D5C2900955EFF /* PosTrueUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosTrueUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7A093DA12A1D820100955EFF /* PopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupViewController.swift; sourceTree = "<group>"; };
+		7A093DA32A209A9F00955EFF /* SessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionViewController.swift; sourceTree = "<group>"; };
+		7A093DA52A25A66700955EFF /* AnalyticsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsViewController.swift; sourceTree = "<group>"; };
+		7A8EC30E2A2A96E8008FB10A /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +66,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A093DAD2A2686EA00955EFF /* SwiftUICharts in Frameworks */,
+				7A7113EA2A2D9A65000769D3 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,6 +114,10 @@
 				7A093D6B2A1D5C2800955EFF /* AppDelegate.swift */,
 				7A093D6D2A1D5C2800955EFF /* SceneDelegate.swift */,
 				7A093D6F2A1D5C2800955EFF /* ViewController.swift */,
+				7A093DA12A1D820100955EFF /* PopupViewController.swift */,
+				7A093DA32A209A9F00955EFF /* SessionViewController.swift */,
+				7A093DA52A25A66700955EFF /* AnalyticsViewController.swift */,
+				7A8EC30E2A2A96E8008FB10A /* ChartView.swift */,
 				7A093D712A1D5C2800955EFF /* Main.storyboard */,
 				7A093D742A1D5C2900955EFF /* Assets.xcassets */,
 				7A093D762A1D5C2900955EFF /* LaunchScreen.storyboard */,
@@ -143,6 +159,10 @@
 			dependencies = (
 			);
 			name = PosTrue;
+			packageProductDependencies = (
+				7A093DAC2A2686EA00955EFF /* SwiftUICharts */,
+				7A7113E92A2D9A65000769D3 /* SnapKit */,
+			);
 			productName = PosTrue;
 			productReference = 7A093D682A1D5C2800955EFF /* PosTrue.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +235,10 @@
 				Base,
 			);
 			mainGroup = 7A093D5F2A1D5C2800955EFF;
+			packageReferences = (
+				7A093DAB2A2686EA00955EFF /* XCRemoteSwiftPackageReference "ChartView" */,
+				7A7113E82A2D9A65000769D3 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 7A093D692A1D5C2800955EFF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -261,6 +285,10 @@
 				7A093D702A1D5C2800955EFF /* ViewController.swift in Sources */,
 				7A093D6C2A1D5C2800955EFF /* AppDelegate.swift in Sources */,
 				7A093D6E2A1D5C2800955EFF /* SceneDelegate.swift in Sources */,
+				7A8EC30F2A2A96E8008FB10A /* ChartView.swift in Sources */,
+				7A093DA42A209A9F00955EFF /* SessionViewController.swift in Sources */,
+				7A093DA22A1D820100955EFF /* PopupViewController.swift in Sources */,
+				7A093DA62A25A66700955EFF /* AnalyticsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,6 +473,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -473,6 +502,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -602,6 +632,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7A093DAB2A2686EA00955EFF /* XCRemoteSwiftPackageReference "ChartView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppPear/ChartView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		7A7113E82A2D9A65000769D3 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7A093DAC2A2686EA00955EFF /* SwiftUICharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7A093DAB2A2686EA00955EFF /* XCRemoteSwiftPackageReference "ChartView" */;
+			productName = SwiftUICharts;
+		};
+		7A7113E92A2D9A65000769D3 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7A7113E82A2D9A65000769D3 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7A093D602A1D5C2800955EFF /* Project object */;
 }
